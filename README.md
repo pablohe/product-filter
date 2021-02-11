@@ -14,6 +14,9 @@ conda create -n product-filter-env python
 conda activate product-filter-env
 conda install python=3.8.5
 conda install netcdf4=1.5.3
+
+git clone git@github.com:pablohe/product-filter.git
+cd product-filter
 ```
 
 ## usage 

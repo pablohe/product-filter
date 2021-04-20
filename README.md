@@ -37,3 +37,8 @@ to import into the data base you have to call:
 ```
  shp2pgsql -I -d -s 31467:4326 "data/vg-shape-files/VG250_KRS.shp" public.VG250_KRS | psql -q --username=postgis --dbname=postgis-database --password  --host="localhost" --port=35432
 ```
+```
+ sudo apt-get install libgeos-dev
+ sudo apt-get install libproj-dev
+ pip install cartopy
+```

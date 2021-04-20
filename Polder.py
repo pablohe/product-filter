@@ -48,8 +48,8 @@ class Polder(object):
 
             INSERT INTO polder3_l1b_bg1 (timestamp, lon, lat, oad, geom ) VALUES 
             ('%s', %s, %s, %s,
-            ST_Buffer(ST_GeographyFromText('POINT(%s %s %s)'), 3000))
-            """%(data[0], data[2], data[1], data[3], data[2], data[1],data[3])
+            ST_Buffer(ST_GeographyFromText('POINT(%s %s)'), 3000))
+            """%(data[0], data[2], data[1], data[3], data[2], data[1])
             # print(query)
             cursor.execute(query)
         
